@@ -1,13 +1,14 @@
-import java.util.*;
-public class main{
-    public static void main(String[]args){
-        Scanner scanner = new Scanner(System.in);
-        String a = scanner.nextLine();
-        String b = scanner.nextLine();
-        String c = scanner.nextLine();
-        scanner.close();
-        System.out.println("1 "+a);
-        System.out.println("2 "+b);
-        System.out.println("3 "+c);    
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int count = 1;
+
+        while (sc.hasNextLine()) {
+            String line = sc.nextLine();
+            System.out.println(count + " " + line);
+            count++;
+        }
     }
 }
